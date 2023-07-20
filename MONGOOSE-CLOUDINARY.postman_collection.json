@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "d84052b8-10a4-4bbf-8d2d-f04110e82d93",
+		"name": "MONGOOSE-CLOUDINARY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28328576"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "V2",
+					"item": [
+						{
+							"name": "CREATE PRODUCTS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Sandal Terrex",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "999000",
+											"type": "text"
+										},
+										{
+											"key": "stock",
+											"value": "99",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/user/Desktop/Sandal Terrex.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://task-mongoose-cloudinary.vercel.app/api/v2/products",
+									"protocol": "https",
+									"host": [
+										"task-mongoose-cloudinary",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"v2",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET ALL PRODUCTS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://task-mongoose-cloudinary.vercel.app/api/v2/products",
+									"protocol": "https",
+									"host": [
+										"task-mongoose-cloudinary",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"v2",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE PRODUCT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"price\" : 249000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://task-mongoose-cloudinary.vercel.app/api/v2/products/:id",
+									"protocol": "https",
+									"host": [
+										"task-mongoose-cloudinary",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"v2",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64b9366e6645d6686d116bde"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE PRODUCT",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://task-mongoose-cloudinary.vercel.app/api/v2/products/:id",
+									"protocol": "https",
+									"host": [
+										"task-mongoose-cloudinary",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"v2",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64b94ff08275cfcfe73c6556"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DETAIL PRODUCT",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://task-mongoose-cloudinary.vercel.app/api/v2/products/:id",
+									"protocol": "https",
+									"host": [
+										"task-mongoose-cloudinary",
+										"vercel",
+										"app"
+									],
+									"path": [
+										"api",
+										"v2",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64b936ee6645d6686d116be2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
